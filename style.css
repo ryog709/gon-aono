@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,li {
+  line-height: 1.2;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+a:hover {
+  opacity: .5;
+  transition: .3s;
+}
+
+/* 全体を中央よせ */
+.wrap {
+  overflow: hidden;
+}
+/* ヘッダー */
+.header-wrap {
+  background-image: url(img/main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  height: 60px;
+}
+
+/* ヘッダーナビ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav ul li {
+  list-style: none;
+  margin: 0 30px;
+}
+.header-nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+} 
+
+.header-main__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+}
+
+.header-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px){
+  .header-wrap{
+    height: 50vh;
+  } 
+
+  .header {
+    padding: 15px 20px;
+  }
+
+  .header-logo {
+    height: 40px;
+  }
+
+  .header-icon {
+    display: block;
+    font-size: 28px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-main__text {
+    font-size: 24px;
+  }
+}
+
+/* お知らせ */
+.news {
+  padding: 90px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.news-title {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 60px;
+}
+
+.news-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.news-list li {
+  padding: 30px 0;
+  border-bottom: 1px solid #000;
+}
+
+.news-list li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.news-list__border {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 5px 8px;
+  margin: 0 30px;
+  font-size: 11px;
+}
+
+@media screen and (max-width: 960px) {
+  .news {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .news-title {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+
+  .news-list {
+    margin-top: 0;
+  }
+
+  .news-list__block {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+
+  .news-list {
+    max-width: 100%;
+  }
+}
+
+
+/* 施工事例 */
+.case {
+  padding: 90px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.case-content {
+  width: 50%;
+  text-align: center;
+}
+
+.case-title {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 90px;
+}
+
+.case-content__title {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.case-content__text {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.case-content__btn {
+  display: block;
+  margin-top: 15px;
+}
+
+.case-content__btn img {
+  width: 300px;
+}
+
+.case-btn {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.case-content__img {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.case-content__img img {
+  width: 100%;
+}
+
+.case-btn a{
+  text-decoration: none;
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 12px 40px;
+  color: #000;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .case {
+    padding: 50px 20px;
+  }
+
+  .flexbox {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  .case-content {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .case-title {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+
+  .case-btn {
+    margin-top: 0px;
+  }
+
+  .case-content__img {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+/* links */
+.links {
+  display: flex;
+  padding-top: 90px;
+}
+
+.link-img {
+  display: block;
+  width: calc(100%/3);
+}
+
+.link-img img {
+  width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  .links {
+    padding-top: 50px;
+    flex-direction: column;
+  }  
+
+  .link-img {
+    width: 100%;
+  }
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 60px;
+}
+
+.footer-nav__list ul {
+  display: flex;
+}
+
+.footer-nav__list ul li {
+  margin: 0 30px;
+}
+
+.footer-nav__list ul li a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  .footer-nav {
+    padding-top: 50px;
+    margin-bottom: 30px;
+    flex-direction: column-reverse;
+  }
+
+  .footer-nav__list {
+    margin-bottom: 20px;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-nav ul li {
+    margin-bottom: 30px;
+  }
+}
